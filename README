@@ -1,0 +1,4 @@
+Application with the simple purpose of drawing a chain of spheres. It's for school and that's where the drawing 'framework' comes from. It's basically some BlueJ sample code they copied and translated. Here's where you can get it: http://www.cs.kent.ac.uk/people/staff/mik/code/
+
+Compiling is as easy as:
+        make
