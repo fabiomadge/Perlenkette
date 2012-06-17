@@ -5,14 +5,25 @@ public class UI{
 	private Perlenkette kette;
 	private Console c;
 
-	public UI(){
+	public UI(String s){
 		c = System.console();
 		if (c == null) {
 			System.err.println("No console.");
 			System.exit(1);
 		}
-		greet();
-	}
+                try {
+                        int i = Integer.parseInt(s);
+                        if (i < 0){
+                                System.out.println("Sorry, but I have to say goodbye.");
+                                quit();
+                        }
+                        kette = new Perlenkette(Integer.parseInt(s));
+                        interact();
+                }
+                catch (NumberFormatException e){
+                        greet();
+                }
+        }
 
 	public void interact(){
 		System.out.println("");
