@@ -94,13 +94,13 @@ public class Perlenkette{
 		}
 	}
 
-        public int biggestR(){
-                int b = 0;
-                for(int i = 0; i < length; i++){
-                        if(list[i].groesseGeben() > b) b = list[i].groesseGeben();
-                }
-                return b;
-        }
+		public int biggestR(){
+				int b = 0;
+				for(int i = 0; i < length; i++){
+						if(list[i].groesseGeben() > b) b = list[i].groesseGeben();
+				}
+				return b;
+		}
 
 	public int gesR(){
 		int s = 0;
