@@ -35,9 +35,9 @@ public class Kreis{
     }
     
     public void groesseSetzen(int neuerRadius){
-        loeschen();
+        //loeschen();
         radius = neuerRadius;
-        zeichnen();
+        //zeichnen();
     }
 
     public int groesseGeben(){
@@ -52,12 +52,12 @@ public class Kreis{
 
     public void xPositionSetzen(int x){
         xPosition = x;
-        zeichnen();
+        //zeichnen();
     }
 
     public void yPositionSetzen(int y){
         yPosition = y;
-        zeichnen();
+        //zeichnen();
     }
 
     public int xPositionGeben(){
@@ -78,12 +78,12 @@ public class Kreis{
 
 
     //Zeichnet den Kreis auf die Leinwand (Canvas)
-    private void zeichnen(){
+    public void zeichnen(){
         if(istSichtbar) {
             Canvas canvas = Canvas.getCanvas();
             canvas.draw(this, fuellfarbe, new Ellipse2D.Double(xPosition, yPosition, 
                                                           radius*2, radius*2));
-            canvas.wait(10);
+            //canvas.wait(10);
         }
     }
 

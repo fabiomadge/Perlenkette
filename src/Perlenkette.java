@@ -12,9 +12,11 @@ public class Perlenkette{
 		r = 50;
 		for(int i = 0; i < l; i++){
 			list[i] = new Kreis();
-			list[i].unsichtbarMachen();
 		}
 		reform();
+		for(int i = 0; i < l; i++){
+			list[i].sichtbarMachen();
+		}
 	}
 
 	public int positionX(int k){
@@ -44,7 +46,8 @@ public class Perlenkette{
 		for(int i = 0; i < length; i++){
 			list[i].xPositionSetzen(positionX(i) + middle - list[i].groesseGeben());
 			list[i].yPositionSetzen(positionY(i) + middle - list[i].groesseGeben());
-			list[i].sichtbarMachen();
+			//list[i].sichtbarMachen();
+			list[i].zeichnen();
 		}
 	}
 
