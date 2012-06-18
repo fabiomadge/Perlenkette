@@ -80,7 +80,6 @@ public class Perlenkette{
 		for (int i = 0; i < length; i++) {
 			list[i].groesseSetzen(g);
 		}
-		reform();
 	}
 
 
